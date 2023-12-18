@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  bitcoin-in-action-youtube:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./datadir:/root/.bitcoin
+      - ./Utility:/opt/Utility
+      - ./Bitcoin-in-Action:/opt/Bitcoin-in-Action
+    ports:
+      - "18443:18443"
+      - "18444:18444"
+    entrypoint: ["/entrypoint.sh"]
