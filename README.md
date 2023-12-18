@@ -41,9 +41,10 @@ Successivamente ci muoviamo dentro il Capitolo 3
 ```bash
 cd Bitcoin-in-Action
 ```
+
 Identifica il video che vuoi provare (disponibile dal video 12 in poi) e lancia
 
-````bash
+```bash
 ./main.sh
 ```
 
