@@ -1,18 +1,17 @@
-# Docker Bitcoin in Action
+# Docker Bitcoin in Action Youtube (rete Regtest)
 
 <img src="https://i.ibb.co/CsLN0J2/bitcoin-Docker.png">
 
 
 Per utilizzare questo repository, per prima cosa è necessario clonarlo.
 ```bash
-git clone https://github.com/bitcoin-dalla-teoria-alla-pratica/Docker-bitcoin.git --depth 1
-cd Docker-bitcoin
+git clone https://github.com/bitcoin-dalla-teoria-alla-pratica/bitcoin-in-action-youtube-docker --depth 1
+cd bitcoin-in-action-youtube-docker
 ```
-Successivamente sarà necessario clonare i repositori del libro/i
+Successivamente sarà necessario clonare il repository del canale youtube
 
 ```bash
-git clone https://github.com/bitcoin-dalla-teoria-alla-pratica/errata-corrige-e-sorgente-esempi.git --depth 1 &&
-git clone https://github.com/bitcoin-dalla-teoria-alla-pratica/Bitcoin-in-action-book.git --depth 1
+git clone https://github.com/bitcoin-dalla-teoria-alla-pratica/Bitcoin-in-Action --depth 1
 ```
 
 Infine dobbiamo lanciare il comando
@@ -25,7 +24,7 @@ docker-compose up
 ```
 
 # Come utilizzare gli esempi del libro
-Ipotizziamo di voler replicare l'esempio del capitolo 3 `P2SH - P2PK`
+Ipotizziamo di voler replicare l'esempio del video 1
 
 Entriamo dentro il container.
 Individuiamolo con il comando
@@ -35,14 +34,16 @@ docker ps
 e utilizziamo il valore sotto la colonna NAMES, ad esempio
 ```bash
 
-docker exec -it docker-bitcoin-bitcoin-in-action-1 zsh
+docker exec -it docker-bitcoin-youtube-bitcoin-in-action-youtube-1 zsh
 
 ```
 Successivamente ci muoviamo dentro il Capitolo 3
 ```bash
-cd Bitcoin-in-action-book
-cd Capitolo\ 3
-cd P2SH\ -\ P2PK
+cd Bitcoin-in-Action
+```
+Identifica il video che vuoi provare (disponibile dal video 12 in poi) e lancia
+
+````bash
 ./main.sh
 ```
 
@@ -50,8 +51,6 @@ Se vogliamo attivare il debug della transazione sarà necessario utilizzare il p
 ```bash
 ./main.sh DEBUG=1
 ```
-
-La differenza con il libro è minima, invece ti lanciare `sh main.sh` dovrete lanciare `./main.sh`
 
 ## Per uscire dal container
 Per uscire dal container
