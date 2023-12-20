@@ -34,10 +34,10 @@ docker ps
 e utilizziamo il valore sotto la colonna NAMES, ad esempio
 ```bash
 
-docker exec -it docker-bitcoin-youtube-bitcoin-in-action-youtube-1 zsh
+docker exec -it docker exec -it bitcoin-in-action-youtube zsh zsh
 
 ```
-Successivamente ci muoviamo dentro il Capitolo 3
+Successivamente ci muoviamo dentro la cartella dei video
 ```bash
 cd Bitcoin-in-Action
 ```
@@ -52,6 +52,14 @@ Se vogliamo attivare il debug della transazione sarà necessario utilizzare il p
 ```bash
 ./main.sh DEBUG=1
 ```
+Questo grazie al progetto [btcdeb](https://github.com/bitcoin-core/btcdeb)
+
+# Utilizzo di btc-rpc-explorer su Regtest
+
+Grazie al progetto [btc-rpc-explorer](https://github.com/janoside/btc-rpc-explorer), ora abbiamo a disposizione un explorer su regtest. Questo ci consente di visualizzare quanto sta accadendo nella rete regtest di Bitcoin attraverso un'interfaccia grafica.
+
+Per accedere all'explorer, collegati a [http://localhost:3002/](http://localhost:3002/) e avrai a disposizione una GUI per esplorare la rete regtest.
+
 
 ## Per uscire dal container
 Per uscire dal container
