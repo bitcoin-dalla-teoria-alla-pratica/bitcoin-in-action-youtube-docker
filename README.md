@@ -23,7 +23,7 @@ docker-compose up
 
 ```
 
-# Come utilizzare gli esempi del libro
+# Come utilizzare gli esempi
 Ipotizziamo di voler replicare l'esempio del video 1
 
 Entriamo dentro il container.
