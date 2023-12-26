@@ -34,7 +34,7 @@ docker ps
 e utilizziamo il valore sotto la colonna NAMES, ad esempio
 ```bash
 
-docker exec -it docker exec -it bitcoin-in-action-youtube zsh zsh
+docker exec -it bitcoin-in-action-youtube zsh
 
 ```
 Successivamente ci muoviamo dentro la cartella dei video
